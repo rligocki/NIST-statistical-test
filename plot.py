@@ -8,7 +8,7 @@ def plot(csvPath,i):
     
     lines = lines[:-1] 
     
-    file(csvPath, 'w').writelines(lines) 
+    open(csvPath, 'w').writelines(lines)
     
     # csv_file = open(csvPath,'r')
     # line_count = sum(1 for row in csv_file)
@@ -62,18 +62,26 @@ def plot(csvPath,i):
                     number_random[8] += 1
                 else:
                     number_random[9] += 1
-    print number_random
+    print(number_random)
 
 
 
     objects = ('0.1', '0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9', '1.0')
     y_pos = np.arange(len(objects))
-    plt.bar(y_pos, number_random, align='center', alpha=0.5)
+    plt.bar(y_pos, number_random, align='edge', alpha=0.5, width=-1.0)
     plt.xticks(y_pos, objects)
     plt.ylabel('Number of Tests')
     plt.xlabel('P-Value')
     #plt.title('P-Value')
-    plt.savefig(csvPath + ".png")
+    plt.savefig(csvPath + ".png", dpi=1200)
+
+    # a = np.array([22, 87, 5, 43, 56, 73, 55, 54, 11, 20, 51, 5, 79, 31, 27])
+    # plt.hist(a, bins=[0, 25, 50, 75, 100])
+    # plt.set_title("histogram of result")
+    # plt.set_xticks([0, 25, 50, 75, 100])
+    # plt.set_xlabel('marks')
+    # plt.set_ylabel('no. of students')
+
     plt.close()
     #plt.show()
 #plot("results/result_08_overlapping_template_matching_test.csv",7)

@@ -20,15 +20,16 @@ testlist = [
         ]
 
 # Get data set
-getInput.getInput()    
-def main():
-    input = "input.txt" # input file containing bit strings
+# getInput.getInput()
 
-    NUM_TEST = 15
+def main():
+    input = "random_arm.txt" # input file containing bit strings
+
+    NUM_TEST = len(testlist)
 
 
     # Write output to csv files
-    fieldnames = [None] * NUM_TEST    #fieldnames associating with outputs of each test
+    fieldnames = [None] * 15    #fieldnames associating with outputs of each test
     fieldnames[0] = ['n', 'zeroes count', 'ones count', 'abs(ones-zeroes)', 'p-value', 'success']
     fieldnames[1] = ['n','chi_sq','p-value', 'success']
     fieldnames[2] = ['n', 'zeroes count', 'ones count', 'one_prop', 'vobs','p-value', 'success']
@@ -242,11 +243,11 @@ def main():
         print("passed percentage = " + str(float(success_count)/total_count))
         print("Test "+ str(i+1) + ": " + testlist[i] + " finished!")       	
     for i in range(13):
-        print output[i]
-        print i
+        print(output[i])
+        print(i)
         plot.plot(output[i],i)
-    print output[4]
-    print 4
+    print(output[4])
+    print(4)
     plot.plot(output[4],4)
     
 if __name__ == "__main__":

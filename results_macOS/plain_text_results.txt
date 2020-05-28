@@ -1,0 +1,102 @@
+0 40000
+p_average = 0.49936896867027897
+passed percentage = 0.988925
+Test 1: monobit_test finished!
+1 40000
+p_average = 0.49924857738562406
+passed percentage = 0.991025
+Test 2: frequency_within_block_test finished!
+2 40000
+p_average = 0.4996590136770611
+passed percentage = 0.98935
+Test 3: runs_test finished!
+3 40000
+p_average = 0.4930961579646676
+passed percentage = 0.991475
+Test 4: longest_run_ones_in_a_block_test finished!
+4 1538
+p_average = 0.5003496539639488
+passed percentage = 0.9908972691807543
+Test 5: binary_matrix_rank_test finished!
+5 40000
+p_average = 0.49207525732941465
+passed percentage = 0.985775
+Test 6: dft_test finished!
+6 40000
+p_average = 0.5069551799056564
+passed percentage = 0.98885
+Test 7: non_overlapping_template_matching_test finished!
+7 62
+p_average = 0.5607426720830556
+passed percentage = 0.967741935483871
+Test 8: overlapping_template_matching_test finished!
+8 163
+p_average = 0.9988779401924008
+passed percentage = 1.0
+Test 9: maurers_universal_test finished!
+9 127
+p_average = 0.5427305573102928
+passed percentage = 1.0
+Test 10: linear_complexity_test finished!
+10 40000
+p_average = 0.4984165927535696
+passed percentage = 0.98335
+Test 11: serial_test finished!
+11 40000
+p_average = 0.4979856569324331
+passed percentage = 0.989875
+Test 12: approximate_entropy_test finished!
+12 40000
+p_average = 0.5045063032104118
+passed percentage = 0.987125
+Test 13: cumulative_sums_test finished!
+13 63
+p_average = 0.5130928143105088
+passed percentage = 0.9047619047619048
+Test 14: random_excursion_test finished!
+14 63
+p_average = 0.47604654045696315
+passed percentage = 0.873015873015873
+Test 15: random_excursion_variant_test finished!
+results/result_01_monobit_test.csv
+0
+[4008, 3893, 3946, 4499, 3373, 4612, 4060, 3174, 4404, 3966]
+results/result_02_frequency_within_block_test.csv
+1
+[3814, 4128, 4095, 3987, 4029, 4003, 4001, 4016, 4086, 3809]
+results/result_03_runs_test.csv
+2
+[4131, 3927, 3987, 3987, 3704, 4154, 4050, 3846, 4143, 3926]
+results/result_04_longest_run_ones_in_a_block_test.csv
+3
+[3833, 4274, 4085, 4187, 3994, 4751, 3101, 4403, 3500, 3726]
+results/result_05_binary_matrix_rank_test.csv
+4
+[150, 172, 127, 180, 139, 121, 192, 120, 155, 154]
+results/result_06_dft_test.csv
+5
+[3939, 5511, 2730, 3295, 3619, 4144, 4456, 4646, 5031, 2543]
+results/result_07_non_overlapping_template_matching_test.csv
+6
+[3890, 3633, 3850, 3985, 4047, 4297, 3892, 4069, 4335, 3901]
+results/result_08_overlapping_template_matching_test.csv
+7
+[2, 2, 2, 1, 9, 5, 3, 7, 6, 6]
+results/result_09_maurers_universal_test.csv
+8
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 109]
+results/result_10_linear_complexity_test.csv
+9
+[5, 3, 7, 5, 5, 10, 5, 14, 9, 5]
+results/result_11_serial_test.csv
+10
+[4003, 3944, 4016, 4092, 4016, 3976, 4046, 3978, 3915, 3979]
+results/result_12_approximate_entropy_test.csv
+11
+[3978, 3995, 4014, 4112, 3984, 3961, 4049, 3927, 3896, 3975]
+results/result_13_cumulative_sums_test.csv
+12
+[4008, 3709, 4091, 4036, 4195, 3517, 3836, 3991, 4260, 4273]
+results/result_05_binary_matrix_rank_test.csv
+4
+[150, 172, 127, 180, 139, 121, 192, 119, 155, 154]

@@ -1,7 +1,7 @@
-import urllib2
+import urllib3
 import requests
 import json
-import thread
+import _thread
 
 ########### N THREAD
 # N = 2
@@ -67,7 +67,7 @@ import thread
 def getInput():
     input_f = open('input.txt','a')
     count = input('Number of requests ( min = 8000 ): ')
-    url = raw_input('Your URL with session-key : ' )
+    url = input('Your URL with session-key : ' )
     ticket = requests.get(url, headers = {'Connection': 'close'}).text
     for i in range(count):      
         req = requests.get(('https://test.ginar.io/rng/generate/' + ticket), headers = {'Connection': 'close'})
